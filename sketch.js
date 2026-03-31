@@ -10,9 +10,10 @@ let loadedImages = [];
 
 function preload() {
   for (let i = 1; i <= totalImages; i++) {
+    // This matches the "img1.jpg" naming style in your folder
     loadedImages[i - 1] = {
       id: i,
-      img: loadImage(`images/img${i}.jpg`)
+      img: loadImage(`images/img${i}.jpg`) 
     };
   }
 }
